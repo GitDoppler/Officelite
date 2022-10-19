@@ -15,7 +15,6 @@ const ultimatePack = document.getElementById("ultimate-pack");
 
 let open = false;
 
-
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
     console.log(optionsContainer);
@@ -101,6 +100,32 @@ function leftSlide() {
 
 leftSlide();
 
+//Timer
+
+const day = document.querySelector(".day");
+const hour = document.querySelector(".hour");
+const minute = document.querySelector(".minute");
+const second = document.querySelector(".second");
+const futureDate = new Date();
+futureDate.setDate(futureDate.getDate() + 47);
+console.log(futureDate);
+
+function updateCountdown() {
+    const currentDate = new Date();
+    const diff = futureDate - currentDate;
+    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const m = Math.floor(diff / 1000 / 60) % 60;
+    const s = Math.floor(diff / 1000) % 60;
+
+
+    day.innerHTML = d;
+    hour.innerHTML = h;
+    minute.innerHTML = m;
+    second.innerHTML = s;
+}
+
+setInterval(updateCountdown, 1000);
 
 
 
