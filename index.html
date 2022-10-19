@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Officelite | Frontend Mentor</title>
+</head>
+
+<body>
+  <script defer src="general.js"></script>
+  <script defer src="link.js"></script>
+
+  <div id="loader"><img src="assets/shared/logo.svg" alt="" class="loader-img"></div>
+
+  <heading class="loading">
+    <div class="heading">
+      <div class="container-1">
+        <img src="assets/shared/logo.svg" alt="Logo" class="logo">
+      </div>
+    </div>
+  </heading>
+
+  <main class="loading">
+
+    <section class="Hero">
+      <div class="container-1">
+        <div class="wrapper-hero">
+          <div class="hero-image animate-right">
+            <img src="assets/home/hero-img.svg" alt="">
+          </div>
+          <div class="hero-content animate-left">
+            <h1 class="font-h1">A simple solution to complex tasks is coming soon</h1>
+            <p class="font-body-1">Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite
+              is the new
+              collaboration platform built with an intuitive interface to improve productivity.</p>
+            <a href="sign-up.html" class="btn-1 font-btn-1 box-shadow-1">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Products">
+      <div class="container-2">
+
+        <div class="box">
+          <div class="product hidden" id="prod_1">
+            <div class="product-content">
+              <h2 class="product-tier font-h2">Basic</h2>
+
+              <div class="wrapper-decor">
+                <div class="price-details">
+                  <p class="price font-price">Free</p>
+                  <p class="price-info font-body-2-grey">Up to 5 users for free</p>
+                </div>
+
+                <div class="product-details">
+                  <p class="font-body-2">Basic document collaboration</p>
+                  <p class="font-body-2">2 GB storage</p>
+                  <p class="font-body-2">Great security and support</p>
+                </div>
+              </div>
+
+              <a href="sign-up.html?basic=on" class="btn-2 font-btn-2" id="basic">Try for free</a>
+            </div>
+          </div>
+
+          <div class="product bgr-blue bgr-circle hidden" id="prod_2">
+            <div class="product-content">
+              <h2 class="product-tier font-h2-white">Pro</h2>
+
+              <div class="wrapper-decor">
+                <div class="price-details">
+                  <p class="price font-price-white">$9.99</p>
+                  <p class="price-info font-body-2-white">Per user, billed monthly</p>
+                </div>
+
+                <div class="product-details">
+                  <p class="font-body-2-darkpearl">All essential integrations</p>
+                  <p class="font-body-2-darkpearl">50 GB storage</p>
+                  <p class="font-body-2-darkpearl">More control and insights</p>
+                </div>
+              </div>
+
+              <a href="sign-up.html?pro=on" class="btn-3 font-btn-2" id="pro">Try for free</a>
+            </div>
+          </div>
+
+          <div class="product hidden" id="prod_3">
+            <div class="product-content">
+              <h2 class="product-tier font-h2">Ultimate</h2>
+
+              <div class="wrapper-decor">
+                <div class="price-details">
+                  <p class="price font-price">$19.99</p>
+                  <p class="price-info font-body-2-grey">Per user, billed monthly</p>
+                </div>
+
+                <div class="product-details">
+                  <p class="font-body-2">Robust work management</p>
+                  <p class="font-body-2">100 GB storage</p>
+                  <p class="font-body-2">VIP support</p>
+                </div>
+              </div>
+
+              <a href="sign-up.html?ultimate=on" class="btn-2 font-btn-2" id="ultimate">Try for free</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer loading">
+    <div class="container-2">
+      <div class="timer">
+        <h3 class="font-h3">COMING <span class="txt-blue">6 DEC 2022</span></h3>
+        <div class="wrapper-clock">
+          <div class="clock">
+            <div class="unit">
+              <div class="unit-content">
+                <p class="day font-tmr-val">47</p>
+                <p class="font-tmr-um">days</p>
+              </div>
+            </div>
+            <div class="unit">
+              <div class="unit-content">
+                <p class="hour font-tmr-val">07</p>
+                <p class="font-tmr-um">hours</p>
+              </div>
+            </div>
+            <div class="unit">
+              <div class="unit-content">
+                <p class="minute font-tmr-val">56</p>
+                <p class="font-tmr-um">min</p>
+              </div>
+            </div>
+            <div class="unit">
+              <div class="unit-content">
+                <p class="second font-tmr-val">14</p>
+                <p class="font-tmr-um">sec</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-1 font-btn-1">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgr-footer"></div>
+  </footer>
+
+
+
+</body>
+
+</html>
